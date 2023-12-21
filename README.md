@@ -1,0 +1,9 @@
+Proyecto sisi
+
+En el fascinante reino animal, existen curiosidades que podrían considerarse totalmente inútiles, pero que sin duda añaden un toque de extravagancia a la vida silvestre. Por ejemplo, el erizo pigmeo africano tiene la capacidad única de estornudar al ser molestado. Sí, has leído bien. Cuando se siente amenazado, este pequeño erizo responde estornudando repetidamente, como si intentara espantar a sus posibles depredadores con un ataque de estornudos.
+
+Otro dato peculiar se refiere al pulpo, conocido por su asombrosa inteligencia. Además de sus habilidades cognitivas, algunos pulpos poseen tres corazones. Dos de ellos bombean sangre hacia las branquias, mientras que el tercero suministra sangre al resto del cuerpo. Este sistema circulatorio extravagante podría ser el secreto detrás de la sorprendente agilidad de estos invertebrados marinos.
+
+En el mundo de las aves, el pingüino emperador es famoso por su resistencia al frío extremo. Sin embargo, lo que quizás no sepas es que estas aves adorables pueden tener problemas para reconocer a sus crías. Debido a la similitud en las vocalizaciones de las colonias de pingüinos, a veces, los padres confunden a sus propios polluelos con los de otros pingüinos. ¡Imagina el lío que debe ser tratar de encontrar a tu pequeño pingüino perdido en medio de una multitud emplumada!
+
+Por último, pero no menos sorprendente, está el axolote, una especie de salamandra mexicana que conserva sus características de renacuajo durante toda su vida. Este adorable anfibio tiene la capacidad única de regenerar partes de su cuerpo, incluyendo extremidades, corazón e incluso parte del cerebro. Aunque esta habilidad es increíble, el axolote parece carecer de interés en evolucionar más allá de su etapa larval, optando por mantener su aspecto juvenil para siempre.
