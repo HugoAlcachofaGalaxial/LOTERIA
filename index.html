@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Comprobador de Lotería</title>
+  
+
+  <style>
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: url('fondo.avif');
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    height: 100%; 
+}
+
+#container {
+  width: 80%;
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 20px;
+  background: rgb(22,91,34);
+  background: rgb(255,255,255);
+  background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(138,14,14,1) 51%);
+  text-align: center;
+  border: 2px solid white;
+  border-radius: 15px;
+}
+
+h2 {
+  color: white;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  color: white;
+}
+
+input {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button {
+  background-color: #4caf50;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button:hover {
+  background-color: #49853e;
+  color: #a4a6a4;
+}
+
+#result {
+  margin-top: 20px;
+  font-size: 18px;
+  color: #333;
+}
+
+footer {
+  margin-top: 30px;
+  padding: 10px;
+  text-align: center;
+  background-color: #4d4d4d;
+  color: #ffffff;
+}
+
+.logo {
+  width: 150px; 
+  margin: 5px;
+}
+
+.logo2 {
+    width: 150px;
+    height: 100px;
+
+}
+
+.logos {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 5px;
+}
+
+  </style>
+
+</head>
+<body>
+  <div id="container">
+    <div class="logos">
+    <img src="logo.png" class="logo">
+    <img src="logo3.png" class="logo2">
+    </div>
+    <h2>Comprobador de Lotería</h2>
+    
+
+    <!-- Campos de entrada para los cinco números de premio -->
+    <label for="premio1">Primer premio:</label>
+    <input type="text" id="premio1" placeholder="Ejemplo: 12345">
+<br>
+    <label for="premio2">Segundo premio:</label>
+    <input type="text" id="premio2" placeholder="Ejemplo: 23451">
+<br>
+    <label for="premio3">Tercer premio:</label>
+    <input type="text" id="premio3" placeholder="Ejemplo: 34512">
+<br>
+    <label for="premio4">Cuarto premio:</label>
+    <input type="text" id="premio4" placeholder="Ejemplo: 45123">
+<br>
+    <label for="premio5">Quinto premio:</label>
+    <input type="text" id="premio5" placeholder="Ejemplo: 51234">
+<br>
+    <button onclick="comprobarNumero()">Comprobar</button>
+
+    <div id="result"></div>
+  </div>
+
+  <footer>Diseñado por las alumnas y alumnos del Programa de Empleo y Formación Huétor Tájar 5.0</footer>
+
+  <script>
+    // Lista de números premiados
+    var numerosPremiados = ["09086", "22616", "78547", "25995", "48287", "05655", "16601", "96418", "37974", "30799", "12244", "49219", "09841", "01041", "30799", "95648", "76649", "88999", "21420", "72261", "82098", "37152", "31127", "04553", "16814", "26925"];
+
+    function comprobarNumero() {
+      // Obtener los números ingresados por el usuario
+      var premio1 = document.getElementById("premio1").value;
+      var premio2 = document.getElementById("premio2").value;
+      var premio3 = document.getElementById("premio3").value;
+      var premio4 = document.getElementById("premio4").value;
+      var premio5 = document.getElementById("premio5").value;
+
+      // Limpiar resultados anteriores
+      document.getElementById("result").innerText = "";
+
+      // Comprobar si algún número es premiado
+      if (numerosPremiados.includes(premio1)) {
+        document.getElementById("result").innerText += "¡Felicidades! Tu número del primer premio ha sido premiado.\n";
+      }
+
+      if (numerosPremiados.includes(premio2)) {
+        document.getElementById("result").innerText += "¡Felicidades! Tu número del segundo premio ha sido premiado.\n";
+      }
+
+      if (numerosPremiados.includes(premio3)) {
+        document.getElementById("result").innerText += "¡Felicidades! Tu número del tercer premio ha sido premiado.\n";
+      }
+
+      if (numerosPremiados.includes(premio4)) {
+        document.getElementById("result").innerText += "¡Felicidades! Tu número del cuarto premio ha sido premiado.\n";
+      }
+
+      if (numerosPremiados.includes(premio5)) {
+        document.getElementById("result").innerText += "¡Felicidades! Tu número del quinto premio ha sido premiado.\n";
+      }
+
+      // Mostrar mensaje si ningún número es premiado
+      if (document.getElementById("result").innerText === "") {
+        document.getElementById("result").innerText = "Lo siento, ninguno de tus números no ha sido premiado. Sigue intentándolo.";
+      }
+    }
+  </script>
+</body>
+</html>
